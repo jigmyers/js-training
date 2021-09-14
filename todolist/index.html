@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ma Liste de tâches</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css"
+    />
+    <style>
+      table button,
+      .paper-btn,
+      [type="button"] {
+        float: right;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div class="paper container">
+      <h1>Ma liste de tâches</h1>
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Nouvelle tâche"
+          aria-label="Texte de la tâche"
+        />
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Laver la voiture</td>
+            <td>
+              <button class="btn-small btn-danger">Supprimer</button>
+              <button class="btn-small marquer">Marquer</button>
+            </td>
+          </tr>
+          <tr>
+            <td><del>Sortir la poubelle</del></td>
+            <td>
+              <button class="btn-small btn-danger">Supprimer</button>
+              <button class="btn-small demarquer">Démarquer</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
